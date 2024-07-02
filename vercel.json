@@ -8,7 +8,7 @@
   ],
   "rewrites": [
     {
-      "source": "/api/hello",
+      "source": "/(.*)",
       "destination": "/app.py"
     }
   ]
