@@ -1,6 +1,5 @@
 from flask import Flask, request, jsonify
 import requests
-import os
  
 app = Flask(__name__)
 
@@ -11,8 +10,7 @@ def hello():
 
 
     # API keys
-    weatherapi_key = os.getenv('WEATHERAPI_KEY')
-
+    weatherapi_key = '5d45d2063d27440e80d130242240107'
 
     # Get location based on IP using ip-api.com
     ip_api_url = f"http://ip-api.com/json/{client_ip}"
